@@ -1,28 +1,17 @@
-var gulp    = require('gulp'),
-  sass    = require('gulp-sass')
 var sass = require('gulp-sass')(require('sass'));
 
-var paths = {
-  styles: {
-    src: 'scss/**/*.scss',
-    dest: 'css'
-  }
-};
+const gulp = require('gulp');
+const sourcemaps = require('gulp-sourcemaps');
+const watch = require('gulp-watch');
 
-function styles() {
-  return gulp
-    .src(paths.styles.src, {
-      sourcemaps: true
-    })
-    .pipe(sass())
-    .pipe(gulp.dest(paths.styles.dest));
-}
+gulp.task('sass-compile', function(){
+  return gulp.src('./scss/**/*.scss')
+      .pipe(sourcemaps.init())
+      .pipe(sass().on('error',sass.logError))
+      .pipe(sourcemaps.write('./'))
+      .pipe(gulp.dest('./css/'))
+})
 
-function watch() {
-  gulp.watch(paths.styles.src, styles);
-}
-
-var build = gulp.parallel(styles, watch);
-
-gulp.task(build);
-gulp.task('default', build);
+gulp.task('watch', function (){
+  gulp.watch('./scss/**/*.scss', gulp.series('sass-compile'))
+})

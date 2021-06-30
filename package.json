@@ -1,9 +1,8 @@
 {
-  "name": " ",
+  "name": "maket4",
   "version": "0.0.1",
-  "description": "",
-  "keywords": "",
-  "license": "",
+  "keywords": [],
+  "license": "ISC",
   "author": "",
   "scripts": {
     "build": "parcel build index.html",
@@ -12,10 +11,23 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.35.1"
   },
   "dependencies": {
-    "gulp": "^4.0.2",
-    "gulp-sass": "^5.0.0"
-  }
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-watch": "^5.0.1"
+  },
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chipik1/maket4.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Chipik1/maket4/issues"
+  },
+  "homepage": "https://github.com/Chipik1/maket4#readme",
+  "description": ""
 }

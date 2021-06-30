@@ -28,6 +28,7 @@
 }
 body{
   font-size: 12px;
+  font-family: "PT Sans",sans-serif;
   text-align: center;
 }
 
@@ -44,7 +45,24 @@ body{
   justify-content: center;
 }
 .content1{
+  display: flex;
   width: auto;
   height: 660px;
+  padding-left: 350px;
+  padding-right: 350px;
   background-color: #f7f7f7;
+  h1{
+    font-size: 24px;
+    color: black;
+  }
+}
+.text{
+  padding-top: 190px;
+  width: 590px;
+  height: 380px;
+  span {
+    text-align: center;
+    font-size: 16px;
+    color: #81817c;
+  }
 }

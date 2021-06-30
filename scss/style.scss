@@ -66,3 +66,20 @@ body{
     color: #81817c;
   }
 }
+.form{
+  padding-top: 50px;
+  .putName, .putEmail, .putText, .putPhone{
+    width: 590px;
+    height: 50px;
+  }
+  h3{
+    font-size: 12px;
+    text-align: left;
+  }
+  h2{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+}

@@ -46,6 +46,7 @@ body{
 }
 .content1{
   display: flex;
+  justify-content: center;
   width: auto;
   height: 660px;
   padding-left: 350px;
@@ -78,11 +79,13 @@ body{
     padding-top: 10px;
     font-size: 12px;
     text-align: left;
+    margin-left: 5px;
   }
   h2{
     font-size: 16px;
     font-weight: bold;
     text-align: left;
+    margin-left: 5px;
   }
   .conf{
     font-size: 12px;
@@ -93,3 +96,114 @@ body{
     margin-right: 10px;
   }
 }
+.form-button{
+  margin: auto;
+  margin-top: 30px;
+  padding-top: 12px;
+  width: 370px;
+  height: 50px;
+  background-color: #337ab7;
+  border-radius: 30px;
+  a{
+    font-family: "PT Sans",sans-serif;
+    font-size: 16px;
+    color: white;
+  }
+}
+@media (max-width: 768px) {
+  .content1{
+    flex-direction: column;
+    padding-right: 0;
+    padding-left: 0;
+    height: auto;
+    .text{
+      padding-right: 0;
+      width: auto;
+    }
+  }
+  .form{
+    margin-top: 70px;
+    h3{
+      margin-left: 84px;
+    }
+    h2{
+      padding-left: 76px;
+    }
+    .conf{
+      padding-left: 84px;
+    }
+    .putName, .putEmail, .putText, .putPhone{
+      width: 590px;
+      height: 50px;
+    }
+  }
+}
+@media screen and (max-width: 425px){
+  .form{
+    margin-top: 0;
+    h3{
+      margin-left: 5px;
+    }
+    h2{
+      margin-left: 30px;
+    }
+    .conf{
+      padding-left: 5px;
+    }
+    .putName, .putEmail, .putText, .putPhone{
+      width: 405px;
+      height: 50px;
+    }
+  }
+  .text{
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 375px){
+  .form{
+    margin-top: 0;
+    h3{
+      margin-left: 0;
+      padding-left: 8px;
+    }
+    h2{
+      margin: 0 auto;
+    }
+    .conf{
+      padding-left: 8px;
+    }
+    .putName, .putEmail, .putText, .putPhone{
+      width: 350px;
+      height: 50px;
+    }
+  }
+  .text{
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 320px){
+  .form{
+    margin-top: 90px;
+    h3{
+      margin-left: 0;
+      padding-left: 10px;
+    }
+    h2{
+      margin-left: -20px;
+    }
+    .conf{
+      padding-left: 10px;
+    }
+    .putName, .putEmail, .putText, .putPhone{
+      width: 290px;
+      height: 50px;
+    }
+  }
+  .text{
+    padding-top: 20px;
+  }
+  .form-button{
+    width: 280px;
+  }
+}
+

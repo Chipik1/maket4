@@ -301,9 +301,65 @@ body {
 
 .content-line {
   display: flex;
+  justify-content: center;
   width: auto;
+  max-width: content-box;
   height: 310px;
   margin-top: 95px;
   background-color: #3498db;
+}
+.content-line .icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+}
+.content-line .icons .icon-1 .img {
+  width: 85px;
+  height: 85px;
+}
+.content-line .icons .icon-1 p {
+  font-size: 28px;
+  color: white;
+}
+.content-line .icons .icon-1 span {
+  font-size: 16px;
+  color: white;
+}
+.content-line .icons .icon-2 .img {
+  width: 85px;
+  height: 85px;
+}
+.content-line .icons .icon-2 p {
+  font-size: 28px;
+  color: white;
+}
+.content-line .icons .icon-2 span {
+  font-size: 16px;
+  color: white;
+}
+.content-line .icons .icon-3 .img {
+  width: 85px;
+  height: 85px;
+}
+.content-line .icons .icon-3 p {
+  font-size: 28px;
+  color: white;
+}
+.content-line .icons .icon-3 span {
+  font-size: 16px;
+  color: white;
+}
+.content-line .icons .icon-4 .img {
+  width: 85px;
+  height: 85px;
+}
+.content-line .icons .icon-4 p {
+  font-size: 28px;
+  color: white;
+}
+.content-line .icons .icon-4 span {
+  font-size: 16px;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

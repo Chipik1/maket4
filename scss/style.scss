@@ -309,10 +309,74 @@ body{
   }
 .content-line{
   display: flex;
+  justify-content: center;
   width: auto;
+  max-width: content-box;
   height: 310px;
   margin-top: 95px;
   background-color: #3498db;
+  .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    .icon-1{
+      .img {
+        width: 85px;
+        height: 85px;
+      }
+      p{
+        font-size: 28px;
+        color: white;
+      }
+      span{
+        font-size: 16px;
+        color: white;
+      }
+    }
+    .icon-2{
+      .img {
+        width: 85px;
+        height: 85px;
+      }
+      p{
+        font-size: 28px;
+        color: white;
+      }
+      span{
+        font-size: 16px;
+        color: white;
+      }
+    }
+    .icon-3{
+      .img {
+        width: 85px;
+        height: 85px;
+      }
+      p{
+        font-size: 28px;
+        color: white;
+      }
+      span{
+        font-size: 16px;
+        color: white;
+      }
+    }
+    .icon-4{
+      .img {
+        width: 85px;
+        height: 85px;
+      }
+      p{
+        font-size: 28px;
+        color: white;
+      }
+      span{
+        font-size: 16px;
+        color: white;
+      }
+    }
+  }
 }
 
 

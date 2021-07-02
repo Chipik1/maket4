@@ -379,6 +379,11 @@ body {
   width: 600px;
   margin: auto;
 }
+.content3 .slider p {
+  font-family: "Open Sans Condensed Light", sans-serif;
+  color: #c4c4c4;
+  font-size: 20px;
+}
 .content3 .slider span {
   font-family: "Open Sans Condensed Light", sans-serif;
   font-size: 18px;
@@ -412,7 +417,21 @@ body {
 .content3 .slider .slick-dots li.slick-active button {
   background-color: #666666;
   border-radius: 50%;
-  border: 0;
+}
+.content3 .slider .info {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content3 .slider .info span {
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+.content3 .slider .info span:last-child {
+  color: #888888;
+  font-style: italic;
 }
 
 .content-icon .slick-track {

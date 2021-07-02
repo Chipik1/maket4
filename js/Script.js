@@ -28,8 +28,9 @@ $(document).ready(function () {
             // instead of a settings object
         ]
     });
-    $('.reply-slider').slick({
+    $('.slider').slick({
         slidesToShow: 1,
-        arrows:false
+        arrows:false,
+        dots:true,
     })
 });

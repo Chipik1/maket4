@@ -1,4 +1,7 @@
 html{
+  overflow-x: auto;
+}
+body{
   overflow-x: hidden;
 }
 .nav-wrapper{
@@ -161,6 +164,16 @@ body{
   .text{
     padding-top: 20px;
   }
+  .content-line{
+    height: auto;
+    .icons{
+      display: flex;
+    }
+    .resp-icon{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 }
 @media screen and (max-width: 375px){
   .form{
@@ -272,7 +285,6 @@ body{
   display: flex;
   flex-direction: column;
 }
-
 .content-line{
   display: flex;
   justify-content: center;
@@ -346,6 +358,60 @@ body{
     }
   }
 }
+.content3 {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+
+  span {
+    padding-top: 75px;
+    padding-bottom: 20px;
+    font-size: 30px;
+  }
+
+  .slider {
+    width: 600px;
+    margin: auto;
+    span {
+      font-family: "Open Sans Condensed Light",sans-serif;
+      font-size: 18px;
+      letter-spacing: 1px;
+      color: #afafaf;
+      width: 1220px;
+    }
+    .slick-track{
+      display: flex;
+    }
+    .slick-list{
+      overflow: hidden;
+    }
+    .slick-dots{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .slick-dots li{
+      list-style: none;
+      margin: 0 10px;
+    }
+    .slick-dots button{
+      font-size: 0;
+      width: 5px;
+      height: 10px;
+      background-color: #b3b3b3;
+      border-radius: 50%;
+      border: 0;
+    }
+    .slick-dots li.slick-active button{
+      background-color: #666666;
+      border-radius: 50%;
+      border: 0;
+    }
+  }
+}
+
+
 .content-icon .slick-track{
   display: flex;
 }

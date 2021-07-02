@@ -1,4 +1,8 @@
 html {
+  overflow-x: auto;
+}
+
+body {
   overflow-x: hidden;
 }
 
@@ -168,6 +172,17 @@ body {
 
   .text {
     padding-top: 20px;
+  }
+
+  .content-line {
+    height: auto;
+  }
+  .content-line .icons {
+    display: flex;
+  }
+  .content-line .resp-icon {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 375px) {
@@ -347,6 +362,57 @@ body {
 .content-line .icons .icon-4 span {
   font-size: 16px;
   color: white;
+}
+
+.content3 {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.content3 span {
+  padding-top: 75px;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+.content3 .slider {
+  width: 600px;
+  margin: auto;
+}
+.content3 .slider span {
+  font-family: "Open Sans Condensed Light", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #afafaf;
+  width: 1220px;
+}
+.content3 .slider .slick-track {
+  display: flex;
+}
+.content3 .slider .slick-list {
+  overflow: hidden;
+}
+.content3 .slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content3 .slider .slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+}
+.content3 .slider .slick-dots button {
+  font-size: 0;
+  width: 5px;
+  height: 10px;
+  background-color: #b3b3b3;
+  border-radius: 50%;
+  border: 0;
+}
+.content3 .slider .slick-dots li.slick-active button {
+  background-color: #666666;
+  border-radius: 50%;
+  border: 0;
 }
 
 .content-icon .slick-track {

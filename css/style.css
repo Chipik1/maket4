@@ -465,22 +465,35 @@ body {
   height: 520px;
 }
 
-.content-icon .slick-track {
+.mentor-tittle {
+  margin: auto;
+  padding-top: 75px;
+}
+.mentor-tittle .mentor {
   display: flex;
 }
-
-.content-icon .slick-dots {
+.mentor-tittle .mentor span {
+  font-size: 40px;
+}
+.mentor-tittle .mentor .img {
+  display: flex;
+}
+.mentor-tittle .mentor .img .text-mentor {
+  display: flex;
+}
+.mentor-tittle .content-icon .slick-track {
+  display: flex;
+}
+.mentor-tittle .content-icon .slick-dots {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.content-icon .slick-dots li {
+.mentor-tittle .content-icon .slick-dots li {
   list-style: none;
   margin: 0 10px;
 }
-
-.content-icon .slick-dots button {
+.mentor-tittle .content-icon .slick-dots button {
   font-size: 0;
   width: 5px;
   height: 10px;
@@ -488,22 +501,20 @@ body {
   border-radius: 50%;
   border: 0;
 }
-
-.content-icon .slick-dots li.slick-active button {
+.mentor-tittle .content-icon .slick-dots li.slick-active button {
   background-color: #666666;
   border-radius: 50%;
   border: 0;
 }
-
 @media screen and (max-device-width: 1185px) {
-  .content2 .content-icon {
+  .mentor-tittle .content2 .content-icon {
     width: 750px;
     display: flex;
     flex-direction: column;
   }
 }
 @media screen and (max-device-width: 1440px) {
-  .content1 {
+  .mentor-tittle .content1 {
     padding-right: 15px;
     padding-left: 15px;
   }

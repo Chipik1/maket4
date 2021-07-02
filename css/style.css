@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+}
+
 .nav-wrapper {
   width: 100%;
   display: flex;
@@ -217,86 +221,66 @@ body {
   }
 }
 .content2 {
-  margin: auto;
+  font-family: "Open Sans Condensed Light", sans-serif;
+  padding-top: 76px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 45px;
 }
-.content2 .tittle {
-  padding-top: 75px;
-  font-family: "PT Sans", sans-serif;
-  font-size: 36px;
-  color: black;
+.content2 span {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-align: center;
 }
 .content2 .content-icon {
+  width: 1220px;
+  padding: 15px 0;
   display: flex;
-  justify-content: space-around;
-  padding-top: 13px;
-  margin: auto;
-  width: 1200px;
-  height: auto;
+  flex-direction: row;
+  justify-content: center;
+  min-width: 0;
 }
-.content2 .content-icon .icon1 {
+.content2 .content-icon .slick-list {
+  overflow: hidden;
+}
+.content2 .content-icon .icon {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   width: 350px;
+  height: 325px;
+  min-width: 0;
 }
-.content2 .content-icon .icon1 img {
-  width: 80px;
-  height: 80px;
+.content2 .content-icon .icon img {
+  width: 65px;
+  height: 71px;
+  min-width: 0;
 }
-.content2 .content-icon .icon1 p {
-  margin-top: 15px;
-  font-family: "PT Sans", sans-serif;
+.content2 .content-icon .icon span {
+  border-bottom: 1px solid #337ab7;
   font-size: 24px;
-  color: #666666;
-  border-bottom: 1px solid #3498db;
-  padding-bottom: 15px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  text-align: center;
+  padding-bottom: 20px;
+  min-width: 0;
 }
-.content2 .content-icon .icon1 .block-text p {
-  font-size: 16px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom: none;
-  padding-top: 12px;
-  color: #a3a3a3;
-}
-.content2 .content-icon .icon2 {
-  width: 324px;
-}
-.content2 .content-icon .icon2 img {
-  width: 80px;
-  height: 80px;
-}
-.content2 .content-icon .icon2 p {
-  margin-top: 15px;
+.content2 .content-icon .icon span:last-child {
   font-family: "PT Sans", sans-serif;
-  font-size: 24px;
-  color: #666666;
-  border-bottom: 1px solid #3498db;
-  padding-bottom: 15px;
-}
-.content2 .content-icon .icon2 .block-text p {
+  padding-top: 40px;
+  color: #888888;
+  border-bottom: 0;
   font-size: 16px;
-  border-bottom: none;
-  padding-top: 12px;
-  color: #a3a3a3;
+  letter-spacing: 0.6px;
+  min-width: 0;
+  width: 300px;
 }
-.content2 .content-icon .icon3 {
-  width: 350px;
-}
-.content2 .content-icon .icon3 img {
-  width: 80px;
-  height: 80px;
-}
-.content2 .content-icon .icon3 p {
-  margin-top: 15px;
-  font-family: "PT Sans", sans-serif;
-  font-size: 24px;
-  color: #666666;
-  border-bottom: 1px solid #3498db;
-  padding-bottom: 15px;
-}
-.content2 .content-icon .icon3 .block-text p {
-  font-size: 16px;
-  border-bottom: none;
-  padding-top: 12px;
-  color: #a3a3a3;
+
+.content-icon {
+  display: flex;
+  flex-direction: column;
 }
 
 .content-line {
@@ -313,6 +297,8 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .content-line .icons .icon-1 .img {
   width: 85px;
@@ -361,5 +347,49 @@ body {
 .content-line .icons .icon-4 span {
   font-size: 16px;
   color: white;
+}
+
+.content-icon .slick-track {
+  display: flex;
+}
+
+.content-icon .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-icon .slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.content-icon .slick-dots button {
+  font-size: 0;
+  width: 5px;
+  height: 10px;
+  background-color: #b3b3b3;
+  border-radius: 50%;
+  border: 0;
+}
+
+.content-icon .slick-dots li.slick-active button {
+  background-color: #666666;
+  border-radius: 50%;
+  border: 0;
+}
+
+@media screen and (max-device-width: 1185px) {
+  .content2 .content-icon {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-device-width: 1440px) {
+  .content1 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

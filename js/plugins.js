@@ -5,3 +5,4 @@ $(document).ready(function() {
     $('body').toggleClass('fixed-page');
   });
 });
+

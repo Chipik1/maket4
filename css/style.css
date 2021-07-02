@@ -401,6 +401,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
 }
 .content3 .slider .slick-dots li {
   list-style: none;
@@ -432,6 +433,36 @@ body {
 .content3 .slider .info span:last-child {
   color: #888888;
   font-style: italic;
+}
+
+.video-block {
+  background-color: #f7f7f7;
+  width: auto;
+  height: auto;
+}
+.video-block .tittle-video {
+  padding-top: 75px;
+  padding-bottom: 30px;
+}
+.video-block .tittle-video span {
+  font-size: 40px;
+}
+.video-block .text-video {
+  width: 1050px;
+  margin: auto;
+}
+.video-block .text-video span {
+  color: #858585;
+  font-size: 16px;
+  text-align: center;
+}
+.video-block .video {
+  margin: auto;
+  padding-top: 30px;
+}
+.video-block .video iframe {
+  width: 1020px;
+  height: 520px;
 }
 
 .content-icon .slick-track {

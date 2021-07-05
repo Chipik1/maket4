@@ -32,10 +32,13 @@ $(document).ready(function () {
         slidesToShow: 1,
         arrows:false,
         dots:true,
+        autoplay: 10000,
+        fade: true,
     })
     $('.mentor').slick({
         slidesToShow:1,
         arrows:false,
         dots:true,
+        autoplay: 10000,
     })
 });

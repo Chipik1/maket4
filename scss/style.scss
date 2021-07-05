@@ -11,7 +11,7 @@ body{
   background-color: #ffffff;
   box-shadow: 0 0 10px black;
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
 }
 .navbar{
   background-color: #ffffff;
@@ -35,7 +35,7 @@ body{
 }
 body{
   font-size: 12px;
-  font-family: "PT Sans",sans-serif;
+  font-family: open_sanslight, sans-serif;
   text-align: center;
 }
 
@@ -47,6 +47,10 @@ body{
 }
 .navbar-light .navbar-toggler-icon {
   background-image: url("../img/burger.png");
+}
+.nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  background-color: #eeeeee;
+  color:#337ab7;
 }
 .form-inline{
   justify-content: center;
@@ -112,7 +116,7 @@ body{
   background-color: #337ab7;
   border-radius: 30px;
   a{
-    font-family: "PT Sans",sans-serif;
+    font-family: open_sanslight,sans-serif;
     font-size: 16px;
     color: white;
   }
@@ -224,16 +228,15 @@ body{
   }
 }
 .content2 {
-  font-family: "Open Sans Condensed Light", sans-serif;
+  font-family: open_sanslight, sans-serif;
   padding-top: 76px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 45px;
   span {
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 0.7px;
+    font-size: 36px;
+    font-weight: 100;
     text-align: center;
   }
 
@@ -264,13 +267,13 @@ body{
         border-bottom: 1px solid #337ab7;
         font-size: 24px;
         font-weight: 500;
-        letter-spacing: 0.8px;
+        letter-spacing:  0.2px;
         text-align: center;
         padding-bottom: 20px;
         min-width: 0;
       }
       span:last-child {
-        font-family: "PT Sans",sans-serif;
+        font-family: open_sanslight, sans-serif;
         padding-top: 40px ;
         color: #888888;
         border-bottom: 0;
@@ -366,21 +369,38 @@ body{
   flex-direction: column;
 
   span {
-    padding-top: 75px;
     padding-bottom: 20px;
-    font-size: 30px;
+    font-size: 36px;
   }
 
   .slider {
-    width: 600px;
+    width: 900px;
     margin: auto;
+    .quote{
+      display: flex;
+      flex-direction: row;
+      i{
+        display: flex;
+        justify-content: end;
+        align-items: start;
+        font-size: 20px;
+        color: #cdcdcd;
+      }
+      i:last-child{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        font-size: 20px;
+        color: #cdcdcd;
+      }
+    }
     p{
-      font-family: "Open Sans Condensed Light",sans-serif;
+      font-family: open_sanslight, sans-serif;
       color: #c4c4c4;
       font-size: 20px;
     }
     span{
-      font-family: "Open Sans Condensed Light",sans-serif;
+      font-family: open_sanslight, sans-serif;
       font-size: 18px;
       letter-spacing: 1px;
       color: #afafaf;
@@ -497,9 +517,9 @@ body{
 
 
       p {
-        font-family: "Open Sans Condensed Light", sans-serif;
+        font-family: open_sanslight, sans-serif;
         text-align: left;
-        font-size: 18px;
+        font-size: 16px;
         letter-spacing: 1px;
         color: #767667;
       }
@@ -541,10 +561,11 @@ body{
       }
 
       span:last-child{
-        font-family: "Open Sans Condensed Light", sans-serif;
+        font-family: open_sanslight, sans-serif;
         color: #f7f7f7;
         font-size: 16px;
         letter-spacing: 1px;
+        font-weight: 100;
       }
     }
 
@@ -564,10 +585,11 @@ body{
       }
 
       span:last-child{
-        font-family: "Open Sans Condensed Light", sans-serif;
+        font-family: open_sanslight, sans-serif;
         color: #f7f7f7;
         font-size: 16px;
         letter-spacing: 1px;
+        font-weight: 100;
       }
     }
 
@@ -587,10 +609,11 @@ body{
       }
 
       span:last-child{
-        font-family: "Open Sans Condensed Light", sans-serif;
+        font-family: open_sanslight, sans-serif;
         color: #f7f7f7;
         font-size: 16px;
         letter-spacing: 1px;
+        font-weight: 100;
       }
     }
 
@@ -610,10 +633,11 @@ body{
       }
 
       span:last-child{
-        font-family: "Open Sans Condensed Light", sans-serif;
+        font-family: open_sanslight, sans-serif;
         color: #f7f7f7;
         font-size: 16px;
         letter-spacing: 1px;
+        font-weight: 100;
       }
     }
   }
@@ -624,17 +648,22 @@ footer{
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
-  span {
+  a {
     color: #70a1c9;
-    font-size: 16px;
-    padding-bottom: 20px;
-    font-family: "Open Sans Condensed Light", sans-serif;
-    letter-spacing: 0.5px
+    span {
+      color: #70a1c9;
+      font-size: 16px;
+      padding-bottom: 20px;
+      font-family: open_sanslight, sans-serif;
+      letter-spacing: 0.5px
+    }
   }
-  span:last-child{
+  a{
+  span:last-child {
     color: #767667;
     font-size: 16px;
-    font-family: "Open Sans Condensed Light", sans-serif;
+    font-family: open_sanslight, sans-serif;
+  }
   }
 }
 .mentor .slick-track{
@@ -652,7 +681,6 @@ footer{
   list-style: none;
   margin: 0 10px;
 }
-
   .content-icon .slick-track{
     display: flex;
   }
@@ -691,7 +719,6 @@ footer{
     border-radius: 50%;
     border: 0;
   }
-
   @media screen and(max-device-width: 1185px) {
     .content2 .content-icon{
       width: 750px;

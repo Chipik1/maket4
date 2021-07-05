@@ -13,7 +13,7 @@ body {
   background-color: #ffffff;
   box-shadow: 0 0 10px black;
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
 }
 
 .navbar {
@@ -38,7 +38,7 @@ body {
 
 body {
   font-size: 12px;
-  font-family: "PT Sans", sans-serif;
+  font-family: open_sanslight, sans-serif;
   text-align: center;
 }
 
@@ -48,6 +48,11 @@ body {
 
 .navbar-light .navbar-toggler-icon {
   background-image: url("../img/burger.png");
+}
+
+.nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  background-color: #eeeeee;
+  color: #337ab7;
 }
 
 .form-inline {
@@ -119,7 +124,7 @@ body {
   border-radius: 30px;
 }
 .form-button a {
-  font-family: "PT Sans", sans-serif;
+  font-family: open_sanslight, sans-serif;
   font-size: 16px;
   color: white;
 }
@@ -237,7 +242,7 @@ body {
   }
 }
 .content2 {
-  font-family: "Open Sans Condensed Light", sans-serif;
+  font-family: open_sanslight, sans-serif;
   padding-top: 76px;
   display: flex;
   flex-direction: column;
@@ -245,9 +250,8 @@ body {
   margin-bottom: 45px;
 }
 .content2 span {
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 0.7px;
+  font-size: 36px;
+  font-weight: 100;
   text-align: center;
 }
 .content2 .content-icon {
@@ -278,13 +282,13 @@ body {
   border-bottom: 1px solid #337ab7;
   font-size: 24px;
   font-weight: 500;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.2px;
   text-align: center;
   padding-bottom: 20px;
   min-width: 0;
 }
 .content2 .content-icon .icon span:last-child {
-  font-family: "PT Sans", sans-serif;
+  font-family: open_sanslight, sans-serif;
   padding-top: 40px;
   color: #888888;
   border-bottom: 0;
@@ -372,21 +376,38 @@ body {
   flex-direction: column;
 }
 .content3 span {
-  padding-top: 75px;
   padding-bottom: 20px;
-  font-size: 30px;
+  font-size: 36px;
 }
 .content3 .slider {
-  width: 600px;
+  width: 900px;
   margin: auto;
 }
+.content3 .slider .quote {
+  display: flex;
+  flex-direction: row;
+}
+.content3 .slider .quote i {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  font-size: 20px;
+  color: #cdcdcd;
+}
+.content3 .slider .quote i:last-child {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-size: 20px;
+  color: #cdcdcd;
+}
 .content3 .slider p {
-  font-family: "Open Sans Condensed Light", sans-serif;
+  font-family: open_sanslight, sans-serif;
   color: #c4c4c4;
   font-size: 20px;
 }
 .content3 .slider span {
-  font-family: "Open Sans Condensed Light", sans-serif;
+  font-family: open_sanslight, sans-serif;
   font-size: 18px;
   letter-spacing: 1px;
   color: #afafaf;
@@ -501,9 +522,9 @@ body {
   font-weight: bold;
 }
 .mentor-slider .img .text-mentor p {
-  font-family: "Open Sans Condensed Light", sans-serif;
+  font-family: open_sanslight, sans-serif;
   text-align: left;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 1px;
   color: #767667;
 }
@@ -544,10 +565,11 @@ body {
   padding-top: 20px;
 }
 .contact-line .container .phone span:last-child {
-  font-family: "Open Sans Condensed Light", sans-serif;
+  font-family: open_sanslight, sans-serif;
   color: #f7f7f7;
   font-size: 16px;
   letter-spacing: 1px;
+  font-weight: 100;
 }
 .contact-line .container .mail {
   display: flex;
@@ -565,10 +587,11 @@ body {
   padding-top: 20px;
 }
 .contact-line .container .mail span:last-child {
-  font-family: "Open Sans Condensed Light", sans-serif;
+  font-family: open_sanslight, sans-serif;
   color: #f7f7f7;
   font-size: 16px;
   letter-spacing: 1px;
+  font-weight: 100;
 }
 .contact-line .container .adres {
   display: flex;
@@ -586,10 +609,11 @@ body {
   padding-top: 20px;
 }
 .contact-line .container .adres span:last-child {
-  font-family: "Open Sans Condensed Light", sans-serif;
+  font-family: open_sanslight, sans-serif;
   color: #f7f7f7;
   font-size: 16px;
   letter-spacing: 1px;
+  font-weight: 100;
 }
 .contact-line .container .facebook {
   display: flex;
@@ -607,10 +631,11 @@ body {
   padding-top: 20px;
 }
 .contact-line .container .facebook span:last-child {
-  font-family: "Open Sans Condensed Light", sans-serif;
+  font-family: open_sanslight, sans-serif;
   color: #f7f7f7;
   font-size: 16px;
   letter-spacing: 1px;
+  font-weight: 100;
 }
 
 footer {
@@ -620,17 +645,20 @@ footer {
   display: flex;
   flex-direction: column;
 }
-footer span {
+footer a {
+  color: #70a1c9;
+}
+footer a span {
   color: #70a1c9;
   font-size: 16px;
   padding-bottom: 20px;
-  font-family: "Open Sans Condensed Light", sans-serif;
+  font-family: open_sanslight, sans-serif;
   letter-spacing: 0.5px;
 }
-footer span:last-child {
+footer a span:last-child {
   color: #767667;
   font-size: 16px;
-  font-family: "Open Sans Condensed Light", sans-serif;
+  font-family: open_sanslight, sans-serif;
 }
 
 .mentor .slick-track {

@@ -129,118 +129,6 @@ body {
   color: white;
 }
 
-@media (max-width: 768px) {
-  .content1 {
-    flex-direction: column;
-    padding-right: 0;
-    padding-left: 0;
-    height: auto;
-  }
-  .content1 .text {
-    padding-right: 0;
-    width: auto;
-  }
-
-  .form {
-    margin-top: 70px;
-  }
-  .form h3 {
-    margin-left: 84px;
-  }
-  .form h2 {
-    padding-left: 76px;
-  }
-  .form .conf {
-    padding-left: 84px;
-  }
-  .form .putName, .form .putEmail, .form .putText, .form .putPhone {
-    width: 590px;
-    height: 50px;
-  }
-}
-@media screen and (max-width: 425px) {
-  .form {
-    margin-top: 0;
-  }
-  .form h3 {
-    margin-left: 5px;
-  }
-  .form h2 {
-    margin-left: 30px;
-  }
-  .form .conf {
-    padding-left: 5px;
-  }
-  .form .putName, .form .putEmail, .form .putText, .form .putPhone {
-    width: 405px;
-    height: 50px;
-  }
-
-  .text {
-    padding-top: 20px;
-  }
-
-  .content-line {
-    height: auto;
-  }
-  .content-line .icons {
-    display: flex;
-  }
-  .content-line .resp-icon {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-@media screen and (max-width: 375px) {
-  .form {
-    margin-top: 0;
-  }
-  .form h3 {
-    margin-left: 0;
-    padding-left: 8px;
-  }
-  .form h2 {
-    margin: 0 auto;
-  }
-  .form .conf {
-    padding-left: 8px;
-  }
-  .form .putName, .form .putEmail, .form .putText, .form .putPhone {
-    width: 350px;
-    height: 50px;
-  }
-
-  .text {
-    padding-top: 20px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .form {
-    margin-top: 90px;
-  }
-  .form h3 {
-    margin-left: 0;
-    padding-left: 10px;
-  }
-  .form h2 {
-    margin-left: -20px;
-  }
-  .form .conf {
-    padding-left: 10px;
-  }
-  .form .putName, .form .putEmail, .form .putText, .form .putPhone {
-    width: 290px;
-    height: 50px;
-  }
-
-  .text {
-    padding-top: 20px;
-  }
-
-  .form-button {
-    width: 280px;
-  }
-}
 .content2 {
   font-family: open_sanslight, sans-serif;
   padding-top: 76px;
@@ -483,7 +371,7 @@ body {
   padding-top: 30px;
 }
 .video-block .video iframe {
-  width: 1020px;
+  width: 1024px;
   height: 520px;
 }
 
@@ -736,6 +624,191 @@ footer a span:last-child {
   .content1 {
     padding-right: 15px;
     padding-left: 15px;
+  }
+}
+@media screen and (max-device-width: 1024px) {
+  .video {
+    margin: auto;
+    padding-top: 30px;
+  }
+  .video iframe {
+    width: 100%;
+    height: 520px;
+  }
+}
+@media (max-width: 768px) {
+  .content1 {
+    flex-direction: column;
+    padding-right: 0;
+    padding-left: 0;
+    height: auto;
+  }
+  .content1 .text {
+    padding-right: 0;
+    width: auto;
+  }
+
+  .form {
+    margin-top: 70px;
+  }
+  .form h3 {
+    margin-left: 70px;
+  }
+  .form h2 {
+    padding-left: 76px;
+  }
+  .form .conf {
+    padding-left: 84px;
+  }
+  .form .putName, .form .putEmail, .form .putText, .form .putPhone {
+    width: 590px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .form {
+    margin-top: 0;
+  }
+  .form h3 {
+    margin-left: 0;
+  }
+  .form h2 {
+    margin-left: 30px;
+  }
+  .form .conf {
+    padding-left: 5px;
+  }
+  .form .putName, .form .putEmail, .form .putText, .form .putPhone {
+    width: 405px;
+    height: 50px;
+  }
+
+  .text {
+    padding-top: 20px;
+  }
+
+  .content-line {
+    height: auto;
+  }
+  .content-line .icons {
+    display: flex;
+  }
+  .content-line .resp-icon {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 375px) {
+  .form {
+    margin-top: 100px;
+  }
+  .form h3 {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .form h2 {
+    margin: 0 auto;
+  }
+  .form .conf {
+    padding-left: 8px;
+  }
+  .form .putName, .form .putEmail, .form .putText, .form .putPhone {
+    width: 350px;
+    height: 50px;
+  }
+
+  .text {
+    padding-top: 120px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .form {
+    margin-top: 90px;
+  }
+  .form h3 {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .form h2 {
+    margin-left: -20px;
+  }
+  .form .conf {
+    padding-left: 10px;
+  }
+  .form .putName, .form .putEmail, .form .putText, .form .putPhone {
+    width: 290px;
+    height: 50px;
+  }
+
+  .text {
+    padding-top: 20px;
+  }
+
+  .form-button {
+    width: 280px;
+  }
+
+  .content3 span {
+    font-size: 26px;
+  }
+  .content3 .slider {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .content3 .slider span {
+    width: 250px;
+  }
+  .content3 .slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-left: 100px;
+    margin-top: 50px;
+  }
+
+  .video-block .text-video {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: auto;
+    margin: auto;
+  }
+  .video-block .video {
+    margin: auto;
+    padding-top: 30px;
+  }
+  .video-block .video iframe {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    height: 186px;
+  }
+
+  .mentor-slider .mentor-tittle {
+    width: 320px;
+    margin: 0;
+  }
+  .mentor-slider .mentor .img {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .mentor-slider .mentor .img .image img {
+    height: 200px;
+  }
+  .mentor-slider .mentor .img .text-mentor {
+    width: 300px;
+  }
+  .mentor-slider .mentor .img .text-mentor p {
+    text-align: center;
+  }
+  .mentor-slider .mentor .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-left: 120px;
+    margin-top: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */

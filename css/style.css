@@ -12,7 +12,8 @@ body {
   justify-content: center;
   background-color: #ffffff;
   box-shadow: 0 0 10px black;
-  position: relative;
+  position: fixed;
+  z-index: 1;
 }
 
 .navbar {
@@ -81,7 +82,7 @@ body {
 }
 
 .form {
-  padding-top: 50px;
+  padding-top: 70px;
 }
 .form .putName, .form .putEmail, .form .putText, .form .putPhone {
   width: 590px;
@@ -482,6 +483,10 @@ body {
   min-width: 0;
   padding-top: 20px;
 }
+.mentor-slider .img .image {
+  height: 356px;
+  width: 337px;
+}
 .mentor-slider .img .text-mentor {
   width: 700px;
   text-align: left;
@@ -501,6 +506,131 @@ body {
   font-size: 18px;
   letter-spacing: 1px;
   color: #767667;
+}
+
+.maps {
+  padding-top: 60px;
+}
+.maps iframe {
+  height: 400px;
+  width: 100%;
+}
+
+.contact-line {
+  width: 100%;
+  background-color: #3498db;
+}
+.contact-line .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1220px;
+  height: 194px;
+  background-color: #3498db;
+}
+.contact-line .container .phone {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+}
+.contact-line .container .phone i {
+  font-size: 50px;
+  color: #f7f7f7;
+}
+.contact-line .container .phone span {
+  color: #f7f7f7;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 20px;
+}
+.contact-line .container .phone span:last-child {
+  font-family: "Open Sans Condensed Light", sans-serif;
+  color: #f7f7f7;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.contact-line .container .mail {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+}
+.contact-line .container .mail i {
+  font-size: 50px;
+  color: #f7f7f7;
+}
+.contact-line .container .mail span {
+  color: #f7f7f7;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 20px;
+}
+.contact-line .container .mail span:last-child {
+  font-family: "Open Sans Condensed Light", sans-serif;
+  color: #f7f7f7;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.contact-line .container .adres {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+}
+.contact-line .container .adres i {
+  font-size: 50px;
+  color: #f7f7f7;
+}
+.contact-line .container .adres span {
+  color: #f7f7f7;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 20px;
+}
+.contact-line .container .adres span:last-child {
+  font-family: "Open Sans Condensed Light", sans-serif;
+  color: #f7f7f7;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.contact-line .container .facebook {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+}
+.contact-line .container .facebook i {
+  font-size: 50px;
+  color: #f7f7f7;
+}
+.contact-line .container .facebook span {
+  color: #f7f7f7;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 20px;
+}
+.contact-line .container .facebook span:last-child {
+  font-family: "Open Sans Condensed Light", sans-serif;
+  color: #f7f7f7;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+footer {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+footer span {
+  color: #70a1c9;
+  font-size: 16px;
+  padding-bottom: 20px;
+  font-family: "Open Sans Condensed Light", sans-serif;
+  letter-spacing: 0.5px;
+}
+footer span:last-child {
+  color: #767667;
+  font-size: 16px;
+  font-family: "Open Sans Condensed Light", sans-serif;
 }
 
 .mentor .slick-track {

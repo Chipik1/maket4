@@ -459,11 +459,64 @@ body{
     }
   }
 }
+.mentor-slider {
+  width: 1220px;
+  margin: 0 auto;
 
   .mentor-tittle {
     margin: auto;
     padding-top: 75px;
+
+    span {
+      font-size: 40px;
+    }
   }
+
+  .img {
+    display: flex;
+    justify-content: space-between;
+    min-width: 0;
+    padding-top: 20px;
+
+    .text-mentor {
+      width: 700px;
+      text-align: left;
+        .title1 {
+          padding-bottom: 30px;
+          span {
+            font-size: 18px;
+            text-align: left;
+            color: #3498db;
+            font-weight: bold;
+          }
+        }
+
+
+      p {
+        font-family: "Open Sans Condensed Light", sans-serif;
+        text-align: left;
+        font-size: 18px;
+        letter-spacing: 1px;
+        color: #767667;
+      }
+    }
+  }
+}
+.mentor .slick-track{
+  display: flex;
+}
+.mentor .slick-list{
+  overflow: hidden;
+}
+.mentor .slick-dots{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mentor .slick-dots li{
+  list-style: none;
+  margin: 0 10px;
+}
 
   .content-icon .slick-track{
     display: flex;
@@ -477,6 +530,19 @@ body{
     list-style: none;
     margin: 0 10px;
   }
+  .mentor .slick-dots button{
+    font-size: 0;
+    width: 5px;
+    height: 10px;
+    background-color: #b3b3b3;
+    border-radius: 50%;
+    border: 0;
+  }
+.mentor .slick-dots li.slick-active button{
+  background-color: #666666;
+  border-radius: 50%;
+  border: 0;
+}
   .content-icon .slick-dots button{
     font-size: 0;
     width: 5px;
@@ -504,6 +570,5 @@ body{
       padding-left: 15px;
     }
   }
-}
 
 

@@ -465,35 +465,79 @@ body {
   height: 520px;
 }
 
-.mentor-tittle {
+.mentor-slider {
+  width: 1220px;
+  margin: 0 auto;
+}
+.mentor-slider .mentor-tittle {
   margin: auto;
   padding-top: 75px;
 }
-.mentor-tittle .mentor {
-  display: flex;
-}
-.mentor-tittle .mentor span {
+.mentor-slider .mentor-tittle span {
   font-size: 40px;
 }
-.mentor-tittle .mentor .img {
+.mentor-slider .img {
+  display: flex;
+  justify-content: space-between;
+  min-width: 0;
+  padding-top: 20px;
+}
+.mentor-slider .img .text-mentor {
+  width: 700px;
+  text-align: left;
+}
+.mentor-slider .img .text-mentor .title1 {
+  padding-bottom: 30px;
+}
+.mentor-slider .img .text-mentor .title1 span {
+  font-size: 18px;
+  text-align: left;
+  color: #3498db;
+  font-weight: bold;
+}
+.mentor-slider .img .text-mentor p {
+  font-family: "Open Sans Condensed Light", sans-serif;
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #767667;
+}
+
+.mentor .slick-track {
   display: flex;
 }
-.mentor-tittle .mentor .img .text-mentor {
-  display: flex;
+
+.mentor .slick-list {
+  overflow: hidden;
 }
-.mentor-tittle .content-icon .slick-track {
-  display: flex;
-}
-.mentor-tittle .content-icon .slick-dots {
+
+.mentor .slick-dots {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.mentor-tittle .content-icon .slick-dots li {
+
+.mentor .slick-dots li {
   list-style: none;
   margin: 0 10px;
 }
-.mentor-tittle .content-icon .slick-dots button {
+
+.content-icon .slick-track {
+  display: flex;
+}
+
+.content-icon .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-icon .slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.mentor .slick-dots button {
   font-size: 0;
   width: 5px;
   height: 10px;
@@ -501,20 +545,37 @@ body {
   border-radius: 50%;
   border: 0;
 }
-.mentor-tittle .content-icon .slick-dots li.slick-active button {
+
+.mentor .slick-dots li.slick-active button {
   background-color: #666666;
   border-radius: 50%;
   border: 0;
 }
+
+.content-icon .slick-dots button {
+  font-size: 0;
+  width: 5px;
+  height: 10px;
+  background-color: #b3b3b3;
+  border-radius: 50%;
+  border: 0;
+}
+
+.content-icon .slick-dots li.slick-active button {
+  background-color: #666666;
+  border-radius: 50%;
+  border: 0;
+}
+
 @media screen and (max-device-width: 1185px) {
-  .mentor-tittle .content2 .content-icon {
+  .content2 .content-icon {
     width: 750px;
     display: flex;
     flex-direction: column;
   }
 }
 @media screen and (max-device-width: 1440px) {
-  .mentor-tittle .content1 {
+  .content1 {
     padding-right: 15px;
     padding-left: 15px;
   }

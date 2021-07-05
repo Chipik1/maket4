@@ -33,4 +33,9 @@ $(document).ready(function () {
         arrows:false,
         dots:true,
     })
+    $('.mentor').slick({
+        slidesToShow:1,
+        arrows:false,
+        dots:true,
+    })
 });

@@ -106,6 +106,9 @@ body{
   input{
     margin-right: 10px;
   }
+  input:focus{
+    box-shadow: 0px 0px 10px #337ab7;
+  }
 }
 .form-button{
   margin: auto;

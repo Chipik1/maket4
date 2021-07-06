@@ -1053,6 +1053,9 @@ footer a span:last-child {
   .content3 .slider span {
     width: 250px;
   }
+  .content3 .slider .info {
+    width: 300px;
+  }
   .content3 .slider .slick-dots {
     display: flex;
     align-items: center;

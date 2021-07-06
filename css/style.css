@@ -110,6 +110,9 @@ body {
   padding-top: 10px;
   text-align: left;
 }
+.form .conf a {
+  color: #337ab7;
+}
 .form input {
   margin-right: 10px;
 }
@@ -554,16 +557,17 @@ footer {
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
-}
-footer a {
   color: #70a1c9;
 }
-footer a span {
+footer span {
   color: #70a1c9;
   font-size: 16px;
   padding-bottom: 20px;
   font-family: open_sanslight, sans-serif;
   letter-spacing: 0.5px;
+}
+footer a {
+  color: #337ab7;
 }
 footer a span:last-child {
   color: #767667;
@@ -789,7 +793,7 @@ footer a span:last-child {
   }
 
   .content2 .content-icon .slick-dots {
-    margin-left: 10px;
+    margin-left: -42px;
   }
 
   .content-line {
@@ -908,6 +912,9 @@ footer a span:last-child {
     flex-wrap: wrap;
   }
 
+  .content2 .content-icon .slick-dots {
+    margin-left: -35px;
+  }
   .content2 span {
     font-size: 32px;
   }
@@ -1028,6 +1035,9 @@ footer a span:last-child {
 
   .content2 span {
     font-size: 28px;
+  }
+  .content2 .content-icon .slick-dots {
+    margin-left: -30px;
   }
   .content2 .content-icon .icon span {
     font-size: 20px;
